@@ -1,0 +1,11 @@
+name: resume-selection-env
+description: AI selects best resume based on job description
+
+actions:
+  type: integer
+
+observations:
+  type: dict
+
+reward:
+  type: float

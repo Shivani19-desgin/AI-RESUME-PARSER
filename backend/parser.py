@@ -2,7 +2,10 @@ import re
 import fitz  # PyMuPDF
 from docx import Document
 import spacy
-from skills import SKILLS
+try:
+    from backend.skills import SKILLS
+except:
+    from skills import SKILLS
 
 nlp = spacy.load("en_core_web_sm")
 

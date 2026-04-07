@@ -4,7 +4,7 @@ import { SunIcon, MoonIcon, CloudArrowUpIcon, CheckCircleIcon, EnvelopeIcon, Pho
 function App() {
   const [file, setFile] = useState(null);
   const [result, setResult] = useState(null);
-  // 🔥 NEW STATES ADDED
+  //  NEW STATES ADDED
   const [jobDescription, setJobDescription] = useState("");
   const [matchResult, setMatchResult] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -119,7 +119,7 @@ function App() {
                 <SparklesIcon className="w-10 h-10 bg-gradient-to-r from-purple-500 to-pink-500 text-white p-2 rounded-2xl mr-3 shadow-lg" />
                 <div>
                   <h1 className="text-4xl font-black bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
-                    Resume Matcher 🔥
+                    Resume Matcher 
                   </h1>
                   <p className="text-sm bg-gradient-to-r from-gray-500 to-gray-400 bg-clip-text text-transparent font-medium">
                     Parse + Match vs Job Description ✨

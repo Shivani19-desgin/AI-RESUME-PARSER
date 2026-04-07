@@ -1,27 +1,11 @@
-# AI Resume Parser & Job Matcher
+# AI Resume Selection Environment
 
-A full-stack web application that allows users to upload resumes (PDF/DOC/DOCX), extract key details like email, phone number, and skills using AI/NLP, store parsed data in a database, and match resumes with job descriptions to calculate a skill match score.
+This project simulates a hiring system where an AI agent selects the best resume.
 
 ## Features
-- Upload and parse resumes
-- Extract email, phone, and skills
-- Store resumes in database
-- Match resume with job description
-- Dark/Light mode UI
-- Modern React + Tailwind frontend
-- FastAPI backend with REST API
+- Extracts skills from resumes
+- Matches with job description
+- Gives score between 0–1
 
-## Tech Stack
-- Frontend: React, Tailwind CSS
-- Backend: FastAPI (Python)
-- Database: SQLite, SQLAlchemy
-- Resume Parsing: PyMuPDF, python-docx, spaCy
-
-## How to Run
-1. Start backend:
-   ```bash
-   uvicorn app:app --reload
-
-2. Start frontend:
-   ```bash 
-    npm start
+## Run
+python inference.py
