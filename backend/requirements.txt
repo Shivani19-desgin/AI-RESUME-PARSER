@@ -5,3 +5,4 @@ spacy
 pymupdf
 python-docx
 python-multipart
+blis

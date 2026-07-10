@@ -1,5 +1,17 @@
-backend/venv/
-frontend/node_modules/
+# Python
+venv/
+env/
 __pycache__/
+*.pyc
+
+# Database
 *.db
+
+# Node
+node_modules/
+
+# Environment
 .env
+
+# VS Code
+.vscode/
