@@ -31,7 +31,7 @@ function App() {
 
     setLoading(true);
     try {
-      const res = await fetch("http://127.0.0.1:8000/upload", {
+      const res = await fetch(`${process.env.REACT_APP_API_URL}/upload`, {
         method: "POST",
         body: formData,
       });
