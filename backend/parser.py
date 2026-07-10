@@ -1,10 +1,8 @@
 import re
 import fitz  # PyMuPDF
 from docx import Document
-import spacy
 from skills import SKILLS
 
-nlp = spacy.load("en_core_web_sm")
 
 def extract_text(file):
     filename = file.filename.lower()
@@ -47,5 +45,5 @@ def parse_resume(text):
     return {
         "email": email,
         "phone": phone,
-        "skills": skills
+        "skills": skills,
     }

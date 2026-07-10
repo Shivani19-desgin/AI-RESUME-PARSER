@@ -1,10 +1,13 @@
 from fastapi import FastAPI, UploadFile, File
 from fastapi.middleware.cors import CORSMiddleware
 from parser import extract_text, parse_resume
-from database import SessionLocal
+from database import SessionLocal, Base, engine
 from models import Resume
+import models
 
 app = FastAPI()
+
+Base.metadata.create_all(bind=engine)
 
 app.add_middleware(
     CORSMiddleware,
@@ -49,3 +52,7 @@ def get_resumes():
         }
         for r in resumes
     ]
+
+@app.get("/")
+def home():
+    return {"message": "AI Resume Parser API is running"}
